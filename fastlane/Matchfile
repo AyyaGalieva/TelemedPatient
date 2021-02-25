@@ -1,0 +1,4 @@
+git_url("git@git.azcltd.com:review_group/ios-codesign.git")
+git_branch "AzoftOOO"
+app_identifier "com.azoft.enterprise.telemed.patient"
+team_name "Azoft OOO"

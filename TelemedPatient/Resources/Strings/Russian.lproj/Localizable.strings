@@ -1,0 +1,98 @@
+// MARK: - Authorization
+
+"authorization.signUpTitle" = "Зарегистрируйтесь, приём ведёт доктор %@";
+"authorization.signInTitle" = "Зайдите для записи, приём ведёт доктор %@";
+"authorization.email" = "Email";
+"authorization.password" = "Пароль";
+"authorization.passwordConfirmation" = "Повторите пароль";
+"authorization.lostPassword" = "Забыли пароль?";
+"authorization.restorePassword" = "Восстановить пароль";
+"authorization.enterEmail" = "Введите почту:";
+"authorization.enterNewPassword" = "Введите новый пароль:";
+"authorization.newPassword" = "Новый пароль";
+"authorization.back" = "назад";
+"authorization.signIn" = "Войти";
+"authorization.or" = "Или";
+"authorization.signUp" = "зарегистрироваться";
+"authorization.fullName" = "ФИО";
+"authorization.phone" = "Номер телефона";
+"authorization.signInOffer" = "войдите";
+"authorization.confirm" = "Подтвердить";
+
+// MARK: - Main
+"main.signUp.tab" = "Записаться";
+"main.medicalCard.tab" = "Медкарта";
+"main.profile.tab" = "Профиль";
+
+// MARK: - Profile
+"profile.title" = "Мой профиль";
+"profile.surname" = "Фамилия";
+"profile.name" = "Имя";
+"profile.patronymic" = "Отчество";
+"profile.specialty" = "Род занятий";
+"profile.city" = "Город проживания";
+"profile.dateOfBirth" = "Дата рождения";
+"profile.phone" = "Телефон";
+"profile.allergy" = "Аллергия";
+"profile.cityTitle" = "г. %@";
+"profile.email" = "E-mail";
+"profile.uuid" = "UUID";
+"profile.logout" = "Зайти под другим аккаунтом";
+"profile.feedBack" = "Обратная связь";
+"profile.notificationsOn" = "Включить нотификации";
+
+// MARK: - Feedback
+"feedback.comment" = "Комментарий";
+"feedback.send" = "Отправить";
+"feedback.sendMessage" = "Сообщение отправлено";
+
+// MARK: - Errors
+"errors.default" = "Упс. Что-то пошло не так, попробуйте позже.";
+"errors.wrongEmail" = "Неправильный e-mail";
+"errors.wrongFullName" = "Введите Фамилию Имя Отчество";
+"errors.wrongPhone" = "Неправильный номер телефона";
+"errors.passwordsDoNotMatch" = "Пароли не совпадают.";
+
+// MARK: - Messages
+"messages.checkEmail" = "На Ваш почтовый адрес отправлено письмо с восстановлением пароля.";
+
+// MARK: - MedicalCard
+"medicalCard.title" = "Медицинская карта";
+"medicalCard.addMedrecord" = "Добавить новую запись";
+"medicalCard.diagnosis" = "Диагноз";
+"medicalCard.date" = "Дата приема";
+"medicalCard.doctorFullName" = "ФИО доктора";
+"medicalCard.specialty" = "Специальность";
+"medicalCard.anamnesis" = "Анамез";
+"medicalCard.treatment" = "Лечение";
+"medicalCard.attachFiles" = "Приложить файлы";
+"medicalCard.cost" = "Стоимость";
+"medicalCard.save" = "Сохранить";
+"medicalCard.delete" = "Удалить";
+"medicalCard.attachment" = "Приложение%d";
+
+// MARK: - Appointments
+"appointments.title" = "Записаться на прием";
+"appointments.qualification" = "Квалификация: ";
+"appointments.seniority" = "Стаж: ";
+"appointments.createAppointment" = "Вы выбрали время с %@ по %@, опишите свою проблему и нажмите кнопку \"Записаться\"";
+"appointments.cancel" = "Отмена";
+"appointments.hasNoTimeToAppointment" = "сегодня свободного времени для записи нет";
+"appointments.nearestTimeToAppointment" = "ближайшее свободное время";
+"appointments.noTimeBlanks" = "сегодня свободного времени для записи нет";
+
+// MARK: - MyAppointments
+"myAppointments.title" = "Мои приёмы";
+"myAppointments.yourAppointment" = "Ваша запись";
+"myAppointments.confirmed" = "к доктору подтверждена";
+"myAppointments.booked" = "(ждёт подтверждения от доктора)";
+"myAppointments.dateSuffix" = "-го";
+"myAppointments.done" = "Приём состоялся";
+"myAppointments.history" = "История приёмов";
+"myAppointments.editText" = "Обновить текст";
+"myAppointments.cancelAppointment" = "Отменить приём";
+"myAppointments.appointmentText" = "Опишите, пожалуйста, Вашу жалобу:";
+"myAppointments.editTextMessage" = "Вы успешно обновили текст для доктора";
+"myAppointments.cancelMessage" = "Ваша запись отменена";
+"myAppointments.canceledByPatient" = "Запись отменена по инициативе клиента";
+"myAppointments.chooseAnotherTime" = "Записаться на другое время";

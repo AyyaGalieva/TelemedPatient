@@ -1,0 +1,1293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A08CBBA256D1D89007C2574 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A08CBBC256D1D89007C2574 /* Localizable.strings */; };
+		0A10F1BE256D13D6007F7DEE /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A10F1BD256D13D6007F7DEE /* R.generated.swift */; };
+		0A13BE09258130B300248B56 /* EnvironmentKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A13BE08258130B300248B56 /* EnvironmentKeys.swift */; };
+		0A34E2D92580E0380071E052 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A34E2D82580E0380071E052 /* String+Extensions.swift */; };
+		0A4353A325752620004780DF /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4353A225752620004780DF /* CustomTextField.swift */; };
+		0A741931256F8C5000FB9CD7 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A741930256F8C5000FB9CD7 /* ButtonStyles.swift */; };
+		0A741933256FA71200FB9CD7 /* FloatingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A741932256FA71200FB9CD7 /* FloatingTextField.swift */; };
+		0A7B6912259103160005F970 /* MedrecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B6911259103160005F970 /* MedrecordView.swift */; };
+		0A7B69142591031E0005F970 /* MedrecordReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B69132591031E0005F970 /* MedrecordReducer.swift */; };
+		0A7B6916259103270005F970 /* MedrecordState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B6915259103270005F970 /* MedrecordState.swift */; };
+		0A7B6918259103300005F970 /* MedrecordAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B6917259103300005F970 /* MedrecordAction.swift */; };
+		0A7B691A259103440005F970 /* MedrecordEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B6919259103440005F970 /* MedrecordEnvironment.swift */; };
+		0A7D236A2594C26100D45EE9 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7D23692594C26100D45EE9 /* UITextField+Extensions.swift */; };
+		0A8E1ECD25B5963200F7EB7C /* ImageWithTextHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8E1ECC25B5963200F7EB7C /* ImageWithTextHStack.swift */; };
+		0A9676E625AF094800E517A9 /* FileAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9676E525AF094800E517A9 /* FileAPI.swift */; };
+		0AB5E5062589F7E700D33D99 /* MedicalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB5E5052589F7E700D33D99 /* MedicalCardView.swift */; };
+		0AB5E509258A01C300D33D99 /* MedicalCardReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB5E508258A01C300D33D99 /* MedicalCardReducer.swift */; };
+		0AB5E50B258A01C900D33D99 /* MedicalCardState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB5E50A258A01C900D33D99 /* MedicalCardState.swift */; };
+		0AB5E50D258A01D200D33D99 /* MedicalCardAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB5E50C258A01D200D33D99 /* MedicalCardAction.swift */; };
+		0AB5E50F258A01DF00D33D99 /* MedicalCardEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB5E50E258A01DF00D33D99 /* MedicalCardEnvironment.swift */; };
+		0AB8C4EB25809E5200BB50D0 /* Image+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB8C4EA25809E5200BB50D0 /* Image+Extensions.swift */; };
+		0AC56728258B5D620067558A /* MedrecordShortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC56727258B5D620067558A /* MedrecordShortView.swift */; };
+		0AC5672A258B61010067558A /* MedicalCardCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC56729258B61010067558A /* MedicalCardCore.swift */; };
+		0AC5672C258CD1590067558A /* MedrecordAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC5672B258CD1590067558A /* MedrecordAPI.swift */; };
+		0ACC9F8F256FF2CD00D2EF33 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC9F8E256FF2CD00D2EF33 /* View+Extensions.swift */; };
+		0ACC9F91256FF31600D2EF33 /* AnimatableModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC9F90256FF31600D2EF33 /* AnimatableModifiers.swift */; };
+		0ACC9F9325710B4600D2EF33 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC9F9225710B4600D2EF33 /* UIView+Extension.swift */; };
+		0ACC9F9525710C5200D2EF33 /* UIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC9F9425710C5200D2EF33 /* UIControl.swift */; };
+		0AEBCBA72592451100BC638F /* FloatingTextFieldNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEBCBA62592451100BC638F /* FloatingTextFieldNotifier.swift */; };
+		0F51E90A2562504900E46261 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F51E9092562504900E46261 /* Color+Extensions.swift */; };
+		0F556EA525CAA0350033B5C2 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 0F556EA325CAA0350033B5C2 /* Localizable.stringsdict */; };
+		3E7AC0859A24DD5F1B731858 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC8ED78E47831111282CC /* Filters.swift */; };
+		3E7AC1117309FB8D3D649F8A /* ResetPasswordAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ACCC7EEDF2B92D31612E4 /* ResetPasswordAPI.swift */; };
+		3E7AC143A39EA7ED046D1D46 /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ACBFA2E8AAFB110013D50 /* APIProvider.swift */; };
+		3E7AC183EF34475357D4E884 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E7ACDC28D5735859ECD0E88 /* Preview Assets.xcassets */; };
+		3E7AC2826D5AE1CD594B8437 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC0BD50B7A44D9CD5F7D0 /* ResetPasswordView.swift */; };
+		3E7AC2A5D730892259A30A4F /* LoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC1CEED6CDEEE655FDB79 /* LoginState.swift */; };
+		3E7AC3102878DFE45D3D4B52 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ACBF8E688CDB5353660FB /* LoginView.swift */; };
+		3E7AC31FF9ED344D3180995F /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ACD5862EDC58A42F24ADC /* AppAction.swift */; };
+		3E7AC34F9EDFFC7A42184EB7 /* SetNewPasswordState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC8F364FC7970924C1607 /* SetNewPasswordState.swift */; };
+		3E7AC3744762F624B9A6EF73 /* SetNewPasswordEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC52E3EA0FB76AC7E27B0 /* SetNewPasswordEnvironment.swift */; };
+		3E7AC3F2B1C08CFF0DCE0D21 /* DefaultAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC8D8769FD2BC09EA49FA /* DefaultAPIError.swift */; };
+		3E7AC4474C5AE640859559A1 /* AuthorizationReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC68C576AFC61DE5B7043 /* AuthorizationReducer.swift */; };
+		3E7AC44FC213AA9C17B69992 /* SocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC9C88E721F222CFF4741 /* SocketClient.swift */; };
+		3E7AC48AA0C7DEFC2F695843 /* LoginReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ACB33E8190B41B4FD53C0 /* LoginReducer.swift */; };
+		3E7AC496A81B454F4F53E861 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC787E6E7CBA1B793BCC5 /* AppView.swift */; };
+		3E7AC49C7B4EACDBA97DA756 /* ProgressHUDPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ACE7D05E748C0FDD940AF /* ProgressHUDPresenter.swift */; };
+		3E7AC4FFB6CB74EE56816DF5 /* SignUpEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ACD08440B9A2B7ACCDA39 /* SignUpEnvironment.swift */; };
+		3E7AC5597FF5C473C93AEE04 /* CreateAppointmentAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC8CF35DFB2CF3D5BCE66 /* CreateAppointmentAction.swift */; };
+		3E7AC580367D0A65679DDE3C /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC5656B142EDFD521EA10 /* AppEnvironment.swift */; };
+		3E7AC590CACF704A62CFCB9F /* ProfileAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC419C0B7A57F51AEC0CA /* ProfileAPI.swift */; };
+		3E7AC5EE756A5AE71B10AC2E /* CreateAppointmentEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC9B266E4812F64165A44 /* CreateAppointmentEnvironment.swift */; };
+		3E7AC60E99FAF4E88390D119 /* SignUpReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ACB9C8A84ADEAC027AA70 /* SignUpReducer.swift */; };
+		3E7AC66FC86D861EDA8D162E /* AppointmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ACCAA540F8CDD43AE5344 /* AppointmentsView.swift */; };
+		3E7AC6ACE3CB8CADE3F8689E /* WorkSlotsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ACE3D3C120E3F3C5FCF87 /* WorkSlotsAPI.swift */; };
+		3E7AC6B7FD38CA9D049B9E82 /* ResetPasswordState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC650EBA470520A1AB1CE /* ResetPasswordState.swift */; };
+		3E7AC6F83568C37694A8D8EA /* LoginEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ACBC7B20638B49D344088 /* LoginEnvironment.swift */; };
+		3E7AC753C518AEC89D487548 /* ResetPasswordAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ACDDB60187220111FE233 /* ResetPasswordAction.swift */; };
+		3E7AC7BFAAA0C2AA4652160B /* SignUpAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ACF0C86B15A7600D0A3FE /* SignUpAction.swift */; };
+		3E7AC7C0669FD8BD623BE05E /* DoctorProfileCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ACC85E6B60BD9C4F917EA /* DoctorProfileCore.swift */; };
+		3E7AC86E848B5AC14B221062 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC9ED9E3839DE4380A9F0 /* AppReducer.swift */; };
+		3E7AC9183E207DD2287D24AE /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ACC1564F77381D5D62671 /* SignUpView.swift */; };
+		3E7AC949B637C8645EA212E0 /* AppointmentsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC8D85381ACF76D7D8DF6 /* AppointmentsAction.swift */; };
+		3E7AC969C9CF2FB7760B5D6A /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ACEBBDD2903CA51BF5DF7 /* BaseAPI.swift */; };
+		3E7AC9A80BBFDC7E4DDE1A22 /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC9D8DE7F1C07797BF68B /* AuthorizationView.swift */; };
+		3E7AC9ABA2E4C910142A199F /* TelemedPatientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ACB86C3AC981EC148307D /* TelemedPatientApp.swift */; };
+		3E7AC9C0B89734B3F2340066 /* WorkSlotsCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC285156496834A8268BD /* WorkSlotsCore.swift */; };
+		3E7AC9D2E501492EB8AE97AF /* AuthorizationCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC2978D7EFCEE2FC65EC8 /* AuthorizationCore.swift */; };
+		3E7AC9D3B27395A55B3F0E88 /* SetNewPasswordAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC295B3570E492726A9F0 /* SetNewPasswordAction.swift */; };
+		3E7ACA47DE8430AFD2E41D34 /* AppointmentsEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ACCB9B127DEBCDB6750F9 /* AppointmentsEnvironment.swift */; };
+		3E7ACAAB82EEC2EA084AA947 /* LoginAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC8C1B1B0148DC7A40150 /* LoginAction.swift */; };
+		3E7ACB6292077A0022DBF138 /* ISecureStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ACB5678449D243AF84829 /* ISecureStorageService.swift */; };
+		3E7ACB9F24AF41B979509BA0 /* AppointmentsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ACE17B7456BFD1593AC5D /* AppointmentsReducer.swift */; };
+		3E7ACBB4508917684383AE59 /* AuthorizationEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ACDA4F68C93F0C4CD4468 /* AuthorizationEnvironment.swift */; };
+		3E7ACC19536226978FD7FD3C /* DoctorProfileAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC02F37F94B25DD3AA6E6 /* DoctorProfileAPI.swift */; };
+		3E7ACC2CAEE668F93DD46539 /* AppointmentReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ACA762067CAF7C761DA5B /* AppointmentReducer.swift */; };
+		3E7ACCAC9BD43F5EAE660B51 /* AuthorizationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC462C97C74339C6F4749 /* AuthorizationAction.swift */; };
+		3E7ACD62DD6E7AEF76D1F77C /* AppointmentsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC7279A168DFA1D23D152 /* AppointmentsState.swift */; };
+		3E7ACD9760EC03C79C298FDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E7ACABC69360CCE71E36114 /* Assets.xcassets */; };
+		3E7ACDF988413E4B16BCFD5F /* SetNewPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC0A52333A3BB560047E0 /* SetNewPasswordView.swift */; };
+		3E7ACE0B5541EA523124FCB4 /* CreateAppointmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ACA8ABC6352B29FDB1603 /* CreateAppointmentView.swift */; };
+		3E7ACE36CFCEBB4EF6262FDE /* AuthorizationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC80EA17220323EB3A7F6 /* AuthorizationState.swift */; };
+		3E7ACEAD493E826DB70FB398 /* TokenStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC2918F9EA901602C2929 /* TokenStorageService.swift */; };
+		3E7ACEB18DDC20AB0E7ADF70 /* CreateAppointmentState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC1CEB16E1BFCC32A6237 /* CreateAppointmentState.swift */; };
+		3E7ACECB15E73BE671CF238C /* SignUpState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ACF0AB4368EE188ED0F5F /* SignUpState.swift */; };
+		3E7ACED925032D66D3EBE189 /* AuthorizationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ACB1911A4656ECE441668 /* AuthorizationAPI.swift */; };
+		3E7ACF0855B52C3F07250B08 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AC291EE339DB938F4C557 /* AppState.swift */; };
+		3E7ACF7ED98D3A7B1BC3076E /* ResetPasswordReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ACEE817E452AAEDDC7F1B /* ResetPasswordReducer.swift */; };
+		3E7ACF97B9FEB136FAC28F25 /* SetNewPasswordReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7ACD65C95893B8C637BE37 /* SetNewPasswordReducer.swift */; };
+		5586DD572598EA050036E6B2 /* DoctorProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5586DD562598EA050036E6B2 /* DoctorProfileImageView.swift */; };
+		5588BADD25812E140023E165 /* ProfileCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5588BADC25812E140023E165 /* ProfileCore.swift */; };
+		F2003EDD2581512900421D18 /* SendEmailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2003EDC2581512900421D18 /* SendEmailData.swift */; };
+		F2003EDF2581557B00421D18 /* Encodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2003EDE2581557B00421D18 /* Encodable+Extensions.swift */; };
+		F21F542A25AC915E00B962C1 /* FeedBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21F542925AC915E00B962C1 /* FeedBackView.swift */; };
+		F271052425AD97E3007D4E98 /* FeedBackState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F271052325AD97E3007D4E98 /* FeedBackState.swift */; };
+		F271052625AD9945007D4E98 /* FeedBackAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F271052525AD9945007D4E98 /* FeedBackAction.swift */; };
+		F271052825AD99E8007D4E98 /* FeedBackReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F271052725AD99E8007D4E98 /* FeedBackReducer.swift */; };
+		F271052A25AD9AE2007D4E98 /* FeedBackEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F271052925AD9AE2007D4E98 /* FeedBackEnvironment.swift */; };
+		F271052C25AD9D82007D4E98 /* FeedbackCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F271052B25AD9D82007D4E98 /* FeedbackCore.swift */; };
+		F271052E25AD9EDE007D4E98 /* FeedbackAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F271052D25AD9EDE007D4E98 /* FeedbackAPI.swift */; };
+		F285FE3E257F549A00233AC2 /* ResetPasswordCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F285FE3D257F549A00233AC2 /* ResetPasswordCore.swift */; };
+		F28E4D2E25CFE730007CDD9C /* MyAppointmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E4D2D25CFE730007CDD9C /* MyAppointmentsView.swift */; };
+		F28E4D3025CFE73A007CDD9C /* MyAppointmentsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E4D2F25CFE73A007CDD9C /* MyAppointmentsState.swift */; };
+		F28E4D3225CFE745007CDD9C /* MyAppointmentsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E4D3125CFE745007CDD9C /* MyAppointmentsAction.swift */; };
+		F28E4D3425CFE755007CDD9C /* MyAppointmentsEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E4D3325CFE755007CDD9C /* MyAppointmentsEnvironment.swift */; };
+		F28E4D3625CFE763007CDD9C /* MyAppointmentsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E4D3525CFE763007CDD9C /* MyAppointmentsReducer.swift */; };
+		F2A740962589F54500A6FD53 /* ProfileState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A740952589F54500A6FD53 /* ProfileState.swift */; };
+		F2A740982589F58400A6FD53 /* ProfileAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A740972589F58400A6FD53 /* ProfileAction.swift */; };
+		F2A7409A2589F61E00A6FD53 /* ProfileEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A740992589F61E00A6FD53 /* ProfileEnvironment.swift */; };
+		F2A7409C2589F65F00A6FD53 /* ProfileReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A7409B2589F65F00A6FD53 /* ProfileReducer.swift */; };
+		F2A7453A259201660052B2CC /* UrlImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A74539259201660052B2CC /* UrlImageView.swift */; };
+		F2C729BA25D3CF2700351AAD /* EditAppointmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C729B925D3CF2700351AAD /* EditAppointmentView.swift */; };
+		F2C729BC25D3CF3A00351AAD /* EditAppointmentState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C729BB25D3CF3A00351AAD /* EditAppointmentState.swift */; };
+		F2C729BE25D3CF4900351AAD /* EditAppointmentAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C729BD25D3CF4900351AAD /* EditAppointmentAction.swift */; };
+		F2C729C025D3CF5D00351AAD /* EditAppointmentEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C729BF25D3CF5D00351AAD /* EditAppointmentEnvironment.swift */; };
+		F2C729C225D3CF6800351AAD /* EditAppointmentReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C729C125D3CF6800351AAD /* EditAppointmentReducer.swift */; };
+		F2E72CAC2588C1DD00A385D0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E72CAB2588C1DD00A385D0 /* ProfileView.swift */; };
+		F2EBAFCD25934D6600EAE84E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EBAFCC25934D6600EAE84E /* ImagePicker.swift */; };
+		F2F001852591053A002503D1 /* ResetPasswordEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F001842591053A002503D1 /* ResetPasswordEnvironment.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A08CBAC256D15FC007C2574 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A10F1BD256D13D6007F7DEE /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		0A13BE08258130B300248B56 /* EnvironmentKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentKeys.swift; sourceTree = "<group>"; };
+		0A34E2D82580E0380071E052 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		0A4353A225752620004780DF /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		0A741930256F8C5000FB9CD7 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		0A741932256FA71200FB9CD7 /* FloatingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTextField.swift; sourceTree = "<group>"; };
+		0A7B690F2590FB1F0005F970 /* Russian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Russian; path = Russian.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0A7B6911259103160005F970 /* MedrecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedrecordView.swift; sourceTree = "<group>"; };
+		0A7B69132591031E0005F970 /* MedrecordReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedrecordReducer.swift; sourceTree = "<group>"; };
+		0A7B6915259103270005F970 /* MedrecordState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedrecordState.swift; sourceTree = "<group>"; };
+		0A7B6917259103300005F970 /* MedrecordAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedrecordAction.swift; sourceTree = "<group>"; };
+		0A7B6919259103440005F970 /* MedrecordEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedrecordEnvironment.swift; sourceTree = "<group>"; };
+		0A7D23692594C26100D45EE9 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		0A8E1ECC25B5963200F7EB7C /* ImageWithTextHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWithTextHStack.swift; sourceTree = "<group>"; };
+		0A9676E525AF094800E517A9 /* FileAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileAPI.swift; sourceTree = "<group>"; };
+		0AB5E5052589F7E700D33D99 /* MedicalCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalCardView.swift; sourceTree = "<group>"; };
+		0AB5E508258A01C300D33D99 /* MedicalCardReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalCardReducer.swift; sourceTree = "<group>"; };
+		0AB5E50A258A01C900D33D99 /* MedicalCardState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalCardState.swift; sourceTree = "<group>"; };
+		0AB5E50C258A01D200D33D99 /* MedicalCardAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalCardAction.swift; sourceTree = "<group>"; };
+		0AB5E50E258A01DF00D33D99 /* MedicalCardEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalCardEnvironment.swift; sourceTree = "<group>"; };
+		0AB8C4EA25809E5200BB50D0 /* Image+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extensions.swift"; sourceTree = "<group>"; };
+		0AC56727258B5D620067558A /* MedrecordShortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedrecordShortView.swift; sourceTree = "<group>"; };
+		0AC56729258B61010067558A /* MedicalCardCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalCardCore.swift; sourceTree = "<group>"; };
+		0AC5672B258CD1590067558A /* MedrecordAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedrecordAPI.swift; sourceTree = "<group>"; };
+		0ACC9F8E256FF2CD00D2EF33 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		0ACC9F90256FF31600D2EF33 /* AnimatableModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableModifiers.swift; sourceTree = "<group>"; };
+		0ACC9F9225710B4600D2EF33 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		0ACC9F9425710C5200D2EF33 /* UIControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIControl.swift; sourceTree = "<group>"; };
+		0AEBCBA62592451100BC638F /* FloatingTextFieldNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTextFieldNotifier.swift; sourceTree = "<group>"; };
+		0F51E9092562504900E46261 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		0F556EA425CAA0350033B5C2 /* Russian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = Russian; path = Strings/Russian.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		3E7AC02F37F94B25DD3AA6E6 /* DoctorProfileAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorProfileAPI.swift; sourceTree = "<group>"; };
+		3E7AC0A52333A3BB560047E0 /* SetNewPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetNewPasswordView.swift; sourceTree = "<group>"; };
+		3E7AC0BD50B7A44D9CD5F7D0 /* ResetPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		3E7AC1CEB16E1BFCC32A6237 /* CreateAppointmentState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAppointmentState.swift; sourceTree = "<group>"; };
+		3E7AC1CEED6CDEEE655FDB79 /* LoginState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginState.swift; sourceTree = "<group>"; };
+		3E7AC285156496834A8268BD /* WorkSlotsCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkSlotsCore.swift; sourceTree = "<group>"; };
+		3E7AC2918F9EA901602C2929 /* TokenStorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenStorageService.swift; sourceTree = "<group>"; };
+		3E7AC291EE339DB938F4C557 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		3E7AC295B3570E492726A9F0 /* SetNewPasswordAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetNewPasswordAction.swift; sourceTree = "<group>"; };
+		3E7AC2978D7EFCEE2FC65EC8 /* AuthorizationCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationCore.swift; sourceTree = "<group>"; };
+		3E7AC2B9CAB9D6B4110636F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		3E7AC419C0B7A57F51AEC0CA /* ProfileAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileAPI.swift; sourceTree = "<group>"; };
+		3E7AC462C97C74339C6F4749 /* AuthorizationAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationAction.swift; sourceTree = "<group>"; };
+		3E7AC52E3EA0FB76AC7E27B0 /* SetNewPasswordEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetNewPasswordEnvironment.swift; sourceTree = "<group>"; };
+		3E7AC5656B142EDFD521EA10 /* AppEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		3E7AC650EBA470520A1AB1CE /* ResetPasswordState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordState.swift; sourceTree = "<group>"; };
+		3E7AC68C576AFC61DE5B7043 /* AuthorizationReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationReducer.swift; sourceTree = "<group>"; };
+		3E7AC7279A168DFA1D23D152 /* AppointmentsState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentsState.swift; sourceTree = "<group>"; };
+		3E7AC787E6E7CBA1B793BCC5 /* AppView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		3E7AC80EA17220323EB3A7F6 /* AuthorizationState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationState.swift; sourceTree = "<group>"; };
+		3E7AC8C1B1B0148DC7A40150 /* LoginAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAction.swift; sourceTree = "<group>"; };
+		3E7AC8CF35DFB2CF3D5BCE66 /* CreateAppointmentAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAppointmentAction.swift; sourceTree = "<group>"; };
+		3E7AC8D85381ACF76D7D8DF6 /* AppointmentsAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentsAction.swift; sourceTree = "<group>"; };
+		3E7AC8D8769FD2BC09EA49FA /* DefaultAPIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultAPIError.swift; sourceTree = "<group>"; };
+		3E7AC8ED78E47831111282CC /* Filters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
+		3E7AC8F364FC7970924C1607 /* SetNewPasswordState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetNewPasswordState.swift; sourceTree = "<group>"; };
+		3E7AC9B266E4812F64165A44 /* CreateAppointmentEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAppointmentEnvironment.swift; sourceTree = "<group>"; };
+		3E7AC9C88E721F222CFF4741 /* SocketClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketClient.swift; sourceTree = "<group>"; };
+		3E7AC9D8DE7F1C07797BF68B /* AuthorizationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
+		3E7AC9ED9E3839DE4380A9F0 /* AppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		3E7ACA762067CAF7C761DA5B /* AppointmentReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentReducer.swift; sourceTree = "<group>"; };
+		3E7ACA8ABC6352B29FDB1603 /* CreateAppointmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAppointmentView.swift; sourceTree = "<group>"; };
+		3E7ACABC69360CCE71E36114 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E7ACB1911A4656ECE441668 /* AuthorizationAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationAPI.swift; sourceTree = "<group>"; };
+		3E7ACB33E8190B41B4FD53C0 /* LoginReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginReducer.swift; sourceTree = "<group>"; };
+		3E7ACB5678449D243AF84829 /* ISecureStorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISecureStorageService.swift; sourceTree = "<group>"; };
+		3E7ACB86C3AC981EC148307D /* TelemedPatientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelemedPatientApp.swift; sourceTree = "<group>"; };
+		3E7ACB9C8A84ADEAC027AA70 /* SignUpReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpReducer.swift; sourceTree = "<group>"; };
+		3E7ACBC7B20638B49D344088 /* LoginEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginEnvironment.swift; sourceTree = "<group>"; };
+		3E7ACBF8E688CDB5353660FB /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3E7ACBFA2E8AAFB110013D50 /* APIProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
+		3E7ACC1564F77381D5D62671 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		3E7ACC85E6B60BD9C4F917EA /* DoctorProfileCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorProfileCore.swift; sourceTree = "<group>"; };
+		3E7ACCAA540F8CDD43AE5344 /* AppointmentsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentsView.swift; sourceTree = "<group>"; };
+		3E7ACCB9B127DEBCDB6750F9 /* AppointmentsEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentsEnvironment.swift; sourceTree = "<group>"; };
+		3E7ACCC7EEDF2B92D31612E4 /* ResetPasswordAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordAPI.swift; sourceTree = "<group>"; };
+		3E7ACD08440B9A2B7ACCDA39 /* SignUpEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpEnvironment.swift; sourceTree = "<group>"; };
+		3E7ACD57FF32674A2AD4B5BB /* TelemedPatient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelemedPatient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E7ACD5862EDC58A42F24ADC /* AppAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
+		3E7ACD65C95893B8C637BE37 /* SetNewPasswordReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetNewPasswordReducer.swift; sourceTree = "<group>"; };
+		3E7ACDA4F68C93F0C4CD4468 /* AuthorizationEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationEnvironment.swift; sourceTree = "<group>"; };
+		3E7ACDC28D5735859ECD0E88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3E7ACDDB60187220111FE233 /* ResetPasswordAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordAction.swift; sourceTree = "<group>"; };
+		3E7ACE17B7456BFD1593AC5D /* AppointmentsReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentsReducer.swift; sourceTree = "<group>"; };
+		3E7ACE3D3C120E3F3C5FCF87 /* WorkSlotsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkSlotsAPI.swift; sourceTree = "<group>"; };
+		3E7ACE7D05E748C0FDD940AF /* ProgressHUDPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHUDPresenter.swift; sourceTree = "<group>"; };
+		3E7ACEBBDD2903CA51BF5DF7 /* BaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		3E7ACEE817E452AAEDDC7F1B /* ResetPasswordReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordReducer.swift; sourceTree = "<group>"; };
+		3E7ACF0AB4368EE188ED0F5F /* SignUpState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpState.swift; sourceTree = "<group>"; };
+		3E7ACF0C86B15A7600D0A3FE /* SignUpAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpAction.swift; sourceTree = "<group>"; };
+		5586DD562598EA050036E6B2 /* DoctorProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorProfileImageView.swift; sourceTree = "<group>"; };
+		5588BADC25812E140023E165 /* ProfileCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCore.swift; sourceTree = "<group>"; };
+		F2003EDC2581512900421D18 /* SendEmailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendEmailData.swift; sourceTree = "<group>"; };
+		F2003EDE2581557B00421D18 /* Encodable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extensions.swift"; sourceTree = "<group>"; };
+		F21F542925AC915E00B962C1 /* FeedBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackView.swift; sourceTree = "<group>"; };
+		F271052325AD97E3007D4E98 /* FeedBackState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackState.swift; sourceTree = "<group>"; };
+		F271052525AD9945007D4E98 /* FeedBackAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackAction.swift; sourceTree = "<group>"; };
+		F271052725AD99E8007D4E98 /* FeedBackReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackReducer.swift; sourceTree = "<group>"; };
+		F271052925AD9AE2007D4E98 /* FeedBackEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackEnvironment.swift; sourceTree = "<group>"; };
+		F271052B25AD9D82007D4E98 /* FeedbackCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackCore.swift; sourceTree = "<group>"; };
+		F271052D25AD9EDE007D4E98 /* FeedbackAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackAPI.swift; sourceTree = "<group>"; };
+		F285FE3D257F549A00233AC2 /* ResetPasswordCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordCore.swift; sourceTree = "<group>"; };
+		F28E4D2D25CFE730007CDD9C /* MyAppointmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsView.swift; sourceTree = "<group>"; };
+		F28E4D2F25CFE73A007CDD9C /* MyAppointmentsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsState.swift; sourceTree = "<group>"; };
+		F28E4D3125CFE745007CDD9C /* MyAppointmentsAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsAction.swift; sourceTree = "<group>"; };
+		F28E4D3325CFE755007CDD9C /* MyAppointmentsEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsEnvironment.swift; sourceTree = "<group>"; };
+		F28E4D3525CFE763007CDD9C /* MyAppointmentsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsReducer.swift; sourceTree = "<group>"; };
+		F2A740952589F54500A6FD53 /* ProfileState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileState.swift; sourceTree = "<group>"; };
+		F2A740972589F58400A6FD53 /* ProfileAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAction.swift; sourceTree = "<group>"; };
+		F2A740992589F61E00A6FD53 /* ProfileEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEnvironment.swift; sourceTree = "<group>"; };
+		F2A7409B2589F65F00A6FD53 /* ProfileReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileReducer.swift; sourceTree = "<group>"; };
+		F2A74539259201660052B2CC /* UrlImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlImageView.swift; sourceTree = "<group>"; };
+		F2C729B925D3CF2700351AAD /* EditAppointmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAppointmentView.swift; sourceTree = "<group>"; };
+		F2C729BB25D3CF3A00351AAD /* EditAppointmentState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAppointmentState.swift; sourceTree = "<group>"; };
+		F2C729BD25D3CF4900351AAD /* EditAppointmentAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAppointmentAction.swift; sourceTree = "<group>"; };
+		F2C729BF25D3CF5D00351AAD /* EditAppointmentEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAppointmentEnvironment.swift; sourceTree = "<group>"; };
+		F2C729C125D3CF6800351AAD /* EditAppointmentReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAppointmentReducer.swift; sourceTree = "<group>"; };
+		F2E72CAB2588C1DD00A385D0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F2EBAFCC25934D6600EAE84E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		F2F001842591053A002503D1 /* ResetPasswordEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordEnvironment.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E7AC3C2D0F0F5768DD6B58F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A08CBB2256D1D25007C2574 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				0A08CBBC256D1D89007C2574 /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		0A08CBC1256D2F29007C2574 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				0A741930256F8C5000FB9CD7 /* ButtonStyles.swift */,
+				0ACC9F90256FF31600D2EF33 /* AnimatableModifiers.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		0A10F1BC256D139E007F7DEE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0A08CBB2256D1D25007C2574 /* Strings */,
+				3E7ACABC69360CCE71E36114 /* Assets.xcassets */,
+				0A10F1BD256D13D6007F7DEE /* R.generated.swift */,
+				0F556EA325CAA0350033B5C2 /* Localizable.stringsdict */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0A74192D256E722700FB9CD7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0AEBCBA5259244F800BC638F /* FloatingTextField */,
+				F2A74539259201660052B2CC /* UrlImageView.swift */,
+				F2EBAFCC25934D6600EAE84E /* ImagePicker.swift */,
+				5586DD562598EA050036E6B2 /* DoctorProfileImageView.swift */,
+				0A8E1ECC25B5963200F7EB7C /* ImageWithTextHStack.swift */,
+				3E7ACE7D05E748C0FDD940AF /* ProgressHUDPresenter.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0A7B6910259102FB0005F970 /* Medrecord */ = {
+			isa = PBXGroup;
+			children = (
+				0A7B6911259103160005F970 /* MedrecordView.swift */,
+				0A7B69132591031E0005F970 /* MedrecordReducer.swift */,
+				0A7B6915259103270005F970 /* MedrecordState.swift */,
+				0A7B6917259103300005F970 /* MedrecordAction.swift */,
+				0A7B6919259103440005F970 /* MedrecordEnvironment.swift */,
+			);
+			path = Medrecord;
+			sourceTree = "<group>";
+		};
+		0AB5E5072589FE0E00D33D99 /* MedicalCard */ = {
+			isa = PBXGroup;
+			children = (
+				0AB5E5052589F7E700D33D99 /* MedicalCardView.swift */,
+				0A7B6910259102FB0005F970 /* Medrecord */,
+				0AC56727258B5D620067558A /* MedrecordShortView.swift */,
+				0AB5E508258A01C300D33D99 /* MedicalCardReducer.swift */,
+				0AB5E50A258A01C900D33D99 /* MedicalCardState.swift */,
+				0AB5E50C258A01D200D33D99 /* MedicalCardAction.swift */,
+				0AB5E50E258A01DF00D33D99 /* MedicalCardEnvironment.swift */,
+			);
+			path = MedicalCard;
+			sourceTree = "<group>";
+		};
+		0AEBCBA5259244F800BC638F /* FloatingTextField */ = {
+			isa = PBXGroup;
+			children = (
+				0A741932256FA71200FB9CD7 /* FloatingTextField.swift */,
+				0AEBCBA62592451100BC638F /* FloatingTextFieldNotifier.swift */,
+				0A4353A225752620004780DF /* CustomTextField.swift */,
+			);
+			path = FloatingTextField;
+			sourceTree = "<group>";
+		};
+		0F51E9082562501B00E46261 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0F51E9092562504900E46261 /* Color+Extensions.swift */,
+				0ACC9F8E256FF2CD00D2EF33 /* View+Extensions.swift */,
+				0ACC9F9225710B4600D2EF33 /* UIView+Extension.swift */,
+				0ACC9F9425710C5200D2EF33 /* UIControl.swift */,
+				0A7D23692594C26100D45EE9 /* UITextField+Extensions.swift */,
+				F2003EDE2581557B00421D18 /* Encodable+Extensions.swift */,
+				0AB8C4EA25809E5200BB50D0 /* Image+Extensions.swift */,
+				0A34E2D82580E0380071E052 /* String+Extensions.swift */,
+				0A13BE08258130B300248B56 /* EnvironmentKeys.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0F51E91A2564F8F900E46261 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3E7ACBFA2E8AAFB110013D50 /* APIProvider.swift */,
+				3E7AC8D8769FD2BC09EA49FA /* DefaultAPIError.swift */,
+				3E7AC9FEC11E4B7EFFFEFEA2 /* API */,
+				3E7ACC243B2A8C014DCC2B1A /* Model */,
+				3E7AC628599A381A3B59A807 /* Sockets */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3E7AC1E4FF24BB53C00A62F0 /* AppView */ = {
+			isa = PBXGroup;
+			children = (
+				3E7AC787E6E7CBA1B793BCC5 /* AppView.swift */,
+				3E7AC9ED9E3839DE4380A9F0 /* AppReducer.swift */,
+				3E7AC291EE339DB938F4C557 /* AppState.swift */,
+				3E7ACD5862EDC58A42F24ADC /* AppAction.swift */,
+				3E7AC5656B142EDFD521EA10 /* AppEnvironment.swift */,
+			);
+			path = AppView;
+			sourceTree = "<group>";
+		};
+		3E7AC59DFFD495448AED620F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F28E4D2C25CFE70E007CDD9C /* MyAppointments */,
+				F2A740942589F4F000A6FD53 /* Profile */,
+				0AB5E5072589FE0E00D33D99 /* MedicalCard */,
+				3E7AC1E4FF24BB53C00A62F0 /* AppView */,
+				3E7ACA9E2F8DFC25EF9866B0 /* Authorization */,
+				3E7AC8FF00008BAB5615607D /* Appointments */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3E7AC61EFD02618230406721 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0A74192D256E722700FB9CD7 /* Common */,
+				0A08CBC1256D2F29007C2574 /* Styles */,
+				3E7AC59DFFD495448AED620F /* Views */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3E7AC628599A381A3B59A807 /* Sockets */ = {
+			isa = PBXGroup;
+			children = (
+				3E7AC9C88E721F222CFF4741 /* SocketClient.swift */,
+			);
+			path = Sockets;
+			sourceTree = "<group>";
+		};
+		3E7AC6CD4ACE0B1AA3C7C26D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3E7ACB5678449D243AF84829 /* ISecureStorageService.swift */,
+				3E7AC2918F9EA901602C2929 /* TokenStorageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3E7AC84BDEF90DE861FE47A6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3E7ACDC28D5735859ECD0E88 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3E7AC8C1C78BE35524DED741 /* PasswordRestoration */ = {
+			isa = PBXGroup;
+			children = (
+				3E7ACCA8FED3104F42B649CF /* ResetPassword */,
+				3E7ACB6D66D466EB903FCCBF /* SetNewPassword */,
+			);
+			path = PasswordRestoration;
+			sourceTree = "<group>";
+		};
+		3E7AC8FF00008BAB5615607D /* Appointments */ = {
+			isa = PBXGroup;
+			children = (
+				3E7ACCAA540F8CDD43AE5344 /* AppointmentsView.swift */,
+				3E7AC7279A168DFA1D23D152 /* AppointmentsState.swift */,
+				3E7AC8D85381ACF76D7D8DF6 /* AppointmentsAction.swift */,
+				3E7ACCB9B127DEBCDB6750F9 /* AppointmentsEnvironment.swift */,
+				3E7ACE17B7456BFD1593AC5D /* AppointmentsReducer.swift */,
+				3E7ACB3E71348D6425BF2A6E /* Appointment */,
+			);
+			path = Appointments;
+			sourceTree = "<group>";
+		};
+		3E7AC9244F4E0F6DE0F169C5 /* TelemedPatient */ = {
+			isa = PBXGroup;
+			children = (
+				F2003EDB2581511500421D18 /* Model */,
+				0A10F1BC256D139E007F7DEE /* Resources */,
+				0F51E91A2564F8F900E46261 /* Network */,
+				0F51E9082562501B00E46261 /* Common */,
+				3E7AC2B9CAB9D6B4110636F9 /* Info.plist */,
+				3E7AC84BDEF90DE861FE47A6 /* Preview Content */,
+				3E7ACB86C3AC981EC148307D /* TelemedPatientApp.swift */,
+				3E7ACC80FFFEC8FEB389F657 /* Core */,
+				3E7AC61EFD02618230406721 /* Presentation */,
+			);
+			path = TelemedPatient;
+			sourceTree = "<group>";
+		};
+		3E7AC954D792DEFEF8D9DB64 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				3E7ACC1564F77381D5D62671 /* SignUpView.swift */,
+				3E7ACF0AB4368EE188ED0F5F /* SignUpState.swift */,
+				3E7ACF0C86B15A7600D0A3FE /* SignUpAction.swift */,
+				3E7ACD08440B9A2B7ACCDA39 /* SignUpEnvironment.swift */,
+				3E7ACB9C8A84ADEAC027AA70 /* SignUpReducer.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		3E7AC9FEC11E4B7EFFFEFEA2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3E7ACB1911A4656ECE441668 /* AuthorizationAPI.swift */,
+				3E7ACEBBDD2903CA51BF5DF7 /* BaseAPI.swift */,
+				3E7AC419C0B7A57F51AEC0CA /* ProfileAPI.swift */,
+				3E7ACCC7EEDF2B92D31612E4 /* ResetPasswordAPI.swift */,
+				0AC5672B258CD1590067558A /* MedrecordAPI.swift */,
+				3E7ACE3D3C120E3F3C5FCF87 /* WorkSlotsAPI.swift */,
+				3E7AC02F37F94B25DD3AA6E6 /* DoctorProfileAPI.swift */,
+				0A9676E525AF094800E517A9 /* FileAPI.swift */,
+				F271052D25AD9EDE007D4E98 /* FeedbackAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		3E7ACA4A72A252169A6BF8B7 = {
+			isa = PBXGroup;
+			children = (
+				3E7ACABA4AA50285E21768F2 /* Products */,
+				3E7AC9244F4E0F6DE0F169C5 /* TelemedPatient */,
+			);
+			sourceTree = "<group>";
+		};
+		3E7ACA9E2F8DFC25EF9866B0 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				3E7AC9D8DE7F1C07797BF68B /* AuthorizationView.swift */,
+				3E7ACC37529FBECD34C3B086 /* Login */,
+				3E7AC954D792DEFEF8D9DB64 /* SignUp */,
+				3E7AC68C576AFC61DE5B7043 /* AuthorizationReducer.swift */,
+				3E7AC80EA17220323EB3A7F6 /* AuthorizationState.swift */,
+				3E7AC462C97C74339C6F4749 /* AuthorizationAction.swift */,
+				3E7ACDA4F68C93F0C4CD4468 /* AuthorizationEnvironment.swift */,
+				3E7AC8C1C78BE35524DED741 /* PasswordRestoration */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		3E7ACABA4AA50285E21768F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E7ACD57FF32674A2AD4B5BB /* TelemedPatient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E7ACB3E71348D6425BF2A6E /* Appointment */ = {
+			isa = PBXGroup;
+			children = (
+				3E7ACA8ABC6352B29FDB1603 /* CreateAppointmentView.swift */,
+				3E7AC1CEB16E1BFCC32A6237 /* CreateAppointmentState.swift */,
+				3E7AC8CF35DFB2CF3D5BCE66 /* CreateAppointmentAction.swift */,
+				3E7ACA762067CAF7C761DA5B /* AppointmentReducer.swift */,
+				3E7AC9B266E4812F64165A44 /* CreateAppointmentEnvironment.swift */,
+			);
+			path = Appointment;
+			sourceTree = "<group>";
+		};
+		3E7ACB6D66D466EB903FCCBF /* SetNewPassword */ = {
+			isa = PBXGroup;
+			children = (
+				3E7AC0A52333A3BB560047E0 /* SetNewPasswordView.swift */,
+				3E7AC8F364FC7970924C1607 /* SetNewPasswordState.swift */,
+				3E7AC295B3570E492726A9F0 /* SetNewPasswordAction.swift */,
+				3E7AC52E3EA0FB76AC7E27B0 /* SetNewPasswordEnvironment.swift */,
+				3E7ACD65C95893B8C637BE37 /* SetNewPasswordReducer.swift */,
+			);
+			path = SetNewPassword;
+			sourceTree = "<group>";
+		};
+		3E7ACC243B2A8C014DCC2B1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E7AC8ED78E47831111282CC /* Filters.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E7ACC37529FBECD34C3B086 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3E7ACBF8E688CDB5353660FB /* LoginView.swift */,
+				3E7AC1CEED6CDEEE655FDB79 /* LoginState.swift */,
+				3E7AC8C1B1B0148DC7A40150 /* LoginAction.swift */,
+				3E7ACBC7B20638B49D344088 /* LoginEnvironment.swift */,
+				3E7ACB33E8190B41B4FD53C0 /* LoginReducer.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3E7ACC80FFFEC8FEB389F657 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3E7AC2978D7EFCEE2FC65EC8 /* AuthorizationCore.swift */,
+				F285FE3D257F549A00233AC2 /* ResetPasswordCore.swift */,
+				0AC56729258B61010067558A /* MedicalCardCore.swift */,
+				3E7AC6CD4ACE0B1AA3C7C26D /* Services */,
+				5588BADC25812E140023E165 /* ProfileCore.swift */,
+				3E7ACC85E6B60BD9C4F917EA /* DoctorProfileCore.swift */,
+				3E7AC285156496834A8268BD /* WorkSlotsCore.swift */,
+				F271052B25AD9D82007D4E98 /* FeedbackCore.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3E7ACCA8FED3104F42B649CF /* ResetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				3E7AC0BD50B7A44D9CD5F7D0 /* ResetPasswordView.swift */,
+				3E7AC650EBA470520A1AB1CE /* ResetPasswordState.swift */,
+				3E7ACDDB60187220111FE233 /* ResetPasswordAction.swift */,
+				3E7ACEE817E452AAEDDC7F1B /* ResetPasswordReducer.swift */,
+				F2F001842591053A002503D1 /* ResetPasswordEnvironment.swift */,
+			);
+			path = ResetPassword;
+			sourceTree = "<group>";
+		};
+		F2003EDB2581511500421D18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F2003EDC2581512900421D18 /* SendEmailData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F21F542825AC914000B962C1 /* FeedBack */ = {
+			isa = PBXGroup;
+			children = (
+				F21F542925AC915E00B962C1 /* FeedBackView.swift */,
+				F271052325AD97E3007D4E98 /* FeedBackState.swift */,
+				F271052525AD9945007D4E98 /* FeedBackAction.swift */,
+				F271052725AD99E8007D4E98 /* FeedBackReducer.swift */,
+				F271052925AD9AE2007D4E98 /* FeedBackEnvironment.swift */,
+			);
+			path = FeedBack;
+			sourceTree = "<group>";
+		};
+		F28E4D2C25CFE70E007CDD9C /* MyAppointments */ = {
+			isa = PBXGroup;
+			children = (
+				F2C729B825D3CF0300351AAD /* EditAppointment */,
+				F28E4D2D25CFE730007CDD9C /* MyAppointmentsView.swift */,
+				F28E4D2F25CFE73A007CDD9C /* MyAppointmentsState.swift */,
+				F28E4D3125CFE745007CDD9C /* MyAppointmentsAction.swift */,
+				F28E4D3325CFE755007CDD9C /* MyAppointmentsEnvironment.swift */,
+				F28E4D3525CFE763007CDD9C /* MyAppointmentsReducer.swift */,
+			);
+			path = MyAppointments;
+			sourceTree = "<group>";
+		};
+		F2A740942589F4F000A6FD53 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F21F542825AC914000B962C1 /* FeedBack */,
+				F2E72CAB2588C1DD00A385D0 /* ProfileView.swift */,
+				F2A740952589F54500A6FD53 /* ProfileState.swift */,
+				F2A740972589F58400A6FD53 /* ProfileAction.swift */,
+				F2A740992589F61E00A6FD53 /* ProfileEnvironment.swift */,
+				F2A7409B2589F65F00A6FD53 /* ProfileReducer.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F2C729B825D3CF0300351AAD /* EditAppointment */ = {
+			isa = PBXGroup;
+			children = (
+				F2C729B925D3CF2700351AAD /* EditAppointmentView.swift */,
+				F2C729BB25D3CF3A00351AAD /* EditAppointmentState.swift */,
+				F2C729BD25D3CF4900351AAD /* EditAppointmentAction.swift */,
+				F2C729BF25D3CF5D00351AAD /* EditAppointmentEnvironment.swift */,
+				F2C729C125D3CF6800351AAD /* EditAppointmentReducer.swift */,
+			);
+			path = EditAppointment;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E7ACDD921603C7CE32DB9C7 /* TelemedPatient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E7AC891DD5D7EEAB8FE051A /* Build configuration list for PBXNativeTarget "TelemedPatient" */;
+			buildPhases = (
+				0AD984B9256D057A00505C9E /* R.swift */,
+				3E7AC408A35B8E276D3CE359 /* Sources */,
+				3E7AC3C2D0F0F5768DD6B58F /* Frameworks */,
+				3E7AC0FF70A3B92914D23BC5 /* Resources */,
+				0A08CBAC256D15FC007C2574 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TelemedPatient;
+			packageProductDependencies = (
+				0F94FB45255D12440005DE09,
+				0F51E90525623F9C00E46261,
+				0F51E90F2564F4A200E46261,
+				0A08CBAE256D16C4007C2574,
+				0FB3AD412578A78F002C99C8,
+				0A13BE06258110A400248B56,
+				0FC70FCD25933FE400FC914F,
+				0FC70FD025949A4800FC914F,
+				0F9B2DA725B56B490052D97C,
+				0F9B2DAA25B5B2640052D97C,
+				0F9B2DAD25B6CE4F0052D97C,
+				0FE6C86025B99FE500D05E0E,
+				0F556F7D25DE0F840033B5C2,
+			);
+			productName = TelemedPatient;
+			productReference = 3E7ACD57FF32674A2AD4B5BB /* TelemedPatient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E7ACE0A4DFFC689DAC51E19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 3E7AC2A31CE49DA2AC109A97 /* Build configuration list for PBXProject "TelemedPatient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = Russian;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Russian,
+			);
+			mainGroup = 3E7ACA4A72A252169A6BF8B7;
+			packageReferences = (
+				0F94FB44255D12440005DE09,
+				0F51E90425623F9C00E46261,
+				0F51E90E2564F4A200E46261,
+				0A08CBAD256D16C4007C2574,
+				0FB3AD402578A78F002C99C8,
+				0A13BE05258110A400248B56,
+				0FC70FCC25933FE400FC914F,
+				0FC70FCF25949A4800FC914F,
+				0F9B2DA625B56B490052D97C,
+				0F9B2DA925B5B2640052D97C,
+				0F9B2DAC25B6CE4F0052D97C,
+				0FE6C85F25B99FE500D05E0E,
+				0F556F7C25DE0F840033B5C2,
+			);
+			productRefGroup = 3E7ACABA4AA50285E21768F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E7ACDD921603C7CE32DB9C7 /* TelemedPatient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E7AC0FF70A3B92914D23BC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7ACD9760EC03C79C298FDE /* Assets.xcassets in Resources */,
+				0F556EA525CAA0350033B5C2 /* Localizable.stringsdict in Resources */,
+				0A08CBBA256D1D89007C2574 /* Localizable.strings in Resources */,
+				3E7AC183EF34475357D4E884 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AD984B9256D057A00505C9E /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/TelemedPatient/Resources/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd BuildTools\nSDKROOT=macosx\nswift run -c release rswift generate \"$SRCROOT/TelemedPatient/Resources/R.generated.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E7AC408A35B8E276D3CE359 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ACC9F91256FF31600D2EF33 /* AnimatableModifiers.swift in Sources */,
+				F271052E25AD9EDE007D4E98 /* FeedbackAPI.swift in Sources */,
+				3E7AC9ABA2E4C910142A199F /* TelemedPatientApp.swift in Sources */,
+				F28E4D3225CFE745007CDD9C /* MyAppointmentsAction.swift in Sources */,
+				0A4353A325752620004780DF /* CustomTextField.swift in Sources */,
+				0ACC9F9525710C5200D2EF33 /* UIControl.swift in Sources */,
+				0F51E90A2562504900E46261 /* Color+Extensions.swift in Sources */,
+				F2F001852591053A002503D1 /* ResetPasswordEnvironment.swift in Sources */,
+				3E7AC9D2E501492EB8AE97AF /* AuthorizationCore.swift in Sources */,
+				0AB8C4EB25809E5200BB50D0 /* Image+Extensions.swift in Sources */,
+				F28E4D3625CFE763007CDD9C /* MyAppointmentsReducer.swift in Sources */,
+				F2C729BC25D3CF3A00351AAD /* EditAppointmentState.swift in Sources */,
+				F2A7409C2589F65F00A6FD53 /* ProfileReducer.swift in Sources */,
+				0ACC9F8F256FF2CD00D2EF33 /* View+Extensions.swift in Sources */,
+				F2E72CAC2588C1DD00A385D0 /* ProfileView.swift in Sources */,
+				0A10F1BE256D13D6007F7DEE /* R.generated.swift in Sources */,
+				0A13BE09258130B300248B56 /* EnvironmentKeys.swift in Sources */,
+				0A7B69142591031E0005F970 /* MedrecordReducer.swift in Sources */,
+				F2A740962589F54500A6FD53 /* ProfileState.swift in Sources */,
+				0A741931256F8C5000FB9CD7 /* ButtonStyles.swift in Sources */,
+				5588BADD25812E140023E165 /* ProfileCore.swift in Sources */,
+				0A7B6912259103160005F970 /* MedrecordView.swift in Sources */,
+				F285FE3E257F549A00233AC2 /* ResetPasswordCore.swift in Sources */,
+				F21F542A25AC915E00B962C1 /* FeedBackView.swift in Sources */,
+				0A7B6918259103300005F970 /* MedrecordAction.swift in Sources */,
+				F2003EDD2581512900421D18 /* SendEmailData.swift in Sources */,
+				0A741933256FA71200FB9CD7 /* FloatingTextField.swift in Sources */,
+				0ACC9F9325710B4600D2EF33 /* UIView+Extension.swift in Sources */,
+				F2EBAFCD25934D6600EAE84E /* ImagePicker.swift in Sources */,
+				3E7AC143A39EA7ED046D1D46 /* APIProvider.swift in Sources */,
+				F28E4D3425CFE755007CDD9C /* MyAppointmentsEnvironment.swift in Sources */,
+				0AB5E50D258A01D200D33D99 /* MedicalCardAction.swift in Sources */,
+				0A34E2D92580E0380071E052 /* String+Extensions.swift in Sources */,
+				0AEBCBA72592451100BC638F /* FloatingTextFieldNotifier.swift in Sources */,
+				3E7AC3F2B1C08CFF0DCE0D21 /* DefaultAPIError.swift in Sources */,
+				F2003EDF2581557B00421D18 /* Encodable+Extensions.swift in Sources */,
+				0A7B691A259103440005F970 /* MedrecordEnvironment.swift in Sources */,
+				0AC5672A258B61010067558A /* MedicalCardCore.swift in Sources */,
+				0AB5E509258A01C300D33D99 /* MedicalCardReducer.swift in Sources */,
+				3E7ACB6292077A0022DBF138 /* ISecureStorageService.swift in Sources */,
+				0A8E1ECD25B5963200F7EB7C /* ImageWithTextHStack.swift in Sources */,
+				3E7ACEAD493E826DB70FB398 /* TokenStorageService.swift in Sources */,
+				F271052425AD97E3007D4E98 /* FeedBackState.swift in Sources */,
+				F2A740982589F58400A6FD53 /* ProfileAction.swift in Sources */,
+				F2A7409A2589F61E00A6FD53 /* ProfileEnvironment.swift in Sources */,
+				3E7ACED925032D66D3EBE189 /* AuthorizationAPI.swift in Sources */,
+				F2C729BE25D3CF4900351AAD /* EditAppointmentAction.swift in Sources */,
+				0AB5E50B258A01C900D33D99 /* MedicalCardState.swift in Sources */,
+				3E7AC969C9CF2FB7760B5D6A /* BaseAPI.swift in Sources */,
+				3E7AC590CACF704A62CFCB9F /* ProfileAPI.swift in Sources */,
+				0A7B6916259103270005F970 /* MedrecordState.swift in Sources */,
+				3E7AC1117309FB8D3D649F8A /* ResetPasswordAPI.swift in Sources */,
+				3E7AC496A81B454F4F53E861 /* AppView.swift in Sources */,
+				3E7AC86E848B5AC14B221062 /* AppReducer.swift in Sources */,
+				3E7ACF0855B52C3F07250B08 /* AppState.swift in Sources */,
+				0A7D236A2594C26100D45EE9 /* UITextField+Extensions.swift in Sources */,
+				3E7AC31FF9ED344D3180995F /* AppAction.swift in Sources */,
+				F2C729BA25D3CF2700351AAD /* EditAppointmentView.swift in Sources */,
+				3E7AC580367D0A65679DDE3C /* AppEnvironment.swift in Sources */,
+				0AB5E50F258A01DF00D33D99 /* MedicalCardEnvironment.swift in Sources */,
+				3E7AC9A80BBFDC7E4DDE1A22 /* AuthorizationView.swift in Sources */,
+				F271052625AD9945007D4E98 /* FeedBackAction.swift in Sources */,
+				F2A7453A259201660052B2CC /* UrlImageView.swift in Sources */,
+				3E7AC3102878DFE45D3D4B52 /* LoginView.swift in Sources */,
+				3E7AC9183E207DD2287D24AE /* SignUpView.swift in Sources */,
+				3E7AC4474C5AE640859559A1 /* AuthorizationReducer.swift in Sources */,
+				3E7ACE36CFCEBB4EF6262FDE /* AuthorizationState.swift in Sources */,
+				F271052825AD99E8007D4E98 /* FeedBackReducer.swift in Sources */,
+				3E7ACCAC9BD43F5EAE660B51 /* AuthorizationAction.swift in Sources */,
+				3E7ACBB4508917684383AE59 /* AuthorizationEnvironment.swift in Sources */,
+				3E7AC2A5D730892259A30A4F /* LoginState.swift in Sources */,
+				3E7ACAAB82EEC2EA084AA947 /* LoginAction.swift in Sources */,
+				3E7AC6F83568C37694A8D8EA /* LoginEnvironment.swift in Sources */,
+				3E7AC48AA0C7DEFC2F695843 /* LoginReducer.swift in Sources */,
+				0AC56728258B5D620067558A /* MedrecordShortView.swift in Sources */,
+				3E7ACECB15E73BE671CF238C /* SignUpState.swift in Sources */,
+				0A9676E625AF094800E517A9 /* FileAPI.swift in Sources */,
+				3E7AC7BFAAA0C2AA4652160B /* SignUpAction.swift in Sources */,
+				F2C729C025D3CF5D00351AAD /* EditAppointmentEnvironment.swift in Sources */,
+				0AC5672C258CD1590067558A /* MedrecordAPI.swift in Sources */,
+				3E7AC4FFB6CB74EE56816DF5 /* SignUpEnvironment.swift in Sources */,
+				3E7AC60E99FAF4E88390D119 /* SignUpReducer.swift in Sources */,
+				3E7AC2826D5AE1CD594B8437 /* ResetPasswordView.swift in Sources */,
+				3E7ACDF988413E4B16BCFD5F /* SetNewPasswordView.swift in Sources */,
+				F28E4D2E25CFE730007CDD9C /* MyAppointmentsView.swift in Sources */,
+				3E7AC6B7FD38CA9D049B9E82 /* ResetPasswordState.swift in Sources */,
+				3E7AC753C518AEC89D487548 /* ResetPasswordAction.swift in Sources */,
+				3E7ACF7ED98D3A7B1BC3076E /* ResetPasswordReducer.swift in Sources */,
+				3E7AC34F9EDFFC7A42184EB7 /* SetNewPasswordState.swift in Sources */,
+				3E7AC9D3B27395A55B3F0E88 /* SetNewPasswordAction.swift in Sources */,
+				3E7AC3744762F624B9A6EF73 /* SetNewPasswordEnvironment.swift in Sources */,
+				F2C729C225D3CF6800351AAD /* EditAppointmentReducer.swift in Sources */,
+				3E7ACF97B9FEB136FAC28F25 /* SetNewPasswordReducer.swift in Sources */,
+				0AB5E5062589F7E700D33D99 /* MedicalCardView.swift in Sources */,
+				3E7AC66FC86D861EDA8D162E /* AppointmentsView.swift in Sources */,
+				3E7ACD62DD6E7AEF76D1F77C /* AppointmentsState.swift in Sources */,
+				3E7AC949B637C8645EA212E0 /* AppointmentsAction.swift in Sources */,
+				3E7ACA47DE8430AFD2E41D34 /* AppointmentsEnvironment.swift in Sources */,
+				3E7ACB9F24AF41B979509BA0 /* AppointmentsReducer.swift in Sources */,
+				5586DD572598EA050036E6B2 /* DoctorProfileImageView.swift in Sources */,
+				F28E4D3025CFE73A007CDD9C /* MyAppointmentsState.swift in Sources */,
+				3E7AC6ACE3CB8CADE3F8689E /* WorkSlotsAPI.swift in Sources */,
+				3E7ACC19536226978FD7FD3C /* DoctorProfileAPI.swift in Sources */,
+				F271052C25AD9D82007D4E98 /* FeedbackCore.swift in Sources */,
+				3E7AC7C0669FD8BD623BE05E /* DoctorProfileCore.swift in Sources */,
+				3E7AC9C0B89734B3F2340066 /* WorkSlotsCore.swift in Sources */,
+				3E7AC0859A24DD5F1B731858 /* Filters.swift in Sources */,
+				3E7ACE0B5541EA523124FCB4 /* CreateAppointmentView.swift in Sources */,
+				3E7ACEB18DDC20AB0E7ADF70 /* CreateAppointmentState.swift in Sources */,
+				3E7AC5597FF5C473C93AEE04 /* CreateAppointmentAction.swift in Sources */,
+				3E7ACC2CAEE668F93DD46539 /* AppointmentReducer.swift in Sources */,
+				3E7AC5EE756A5AE71B10AC2E /* CreateAppointmentEnvironment.swift in Sources */,
+				F271052A25AD9AE2007D4E98 /* FeedBackEnvironment.swift in Sources */,
+				3E7AC44FC213AA9C17B69992 /* SocketClient.swift in Sources */,
+				3E7AC49C7B4EACDBA97DA756 /* ProgressHUDPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0A08CBBC256D1D89007C2574 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A7B690F2590FB1F0005F970 /* Russian */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		0F556EA325CAA0350033B5C2 /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F556EA425CAA0350033B5C2 /* Russian */,
+			);
+			name = Localizable.stringsdict;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E7AC1FA0994D0A826D16107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3E7AC6F38CC1733D28BF647B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E7AC9C1BD251C2058C37DB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_ASSET_PATHS = "\"TelemedPatient/Preview Content\"";
+				DEVELOPMENT_TEAM = JHDQ2CRC3V;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TelemedPatient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.azoft.enterprise.telemed.patient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.azoft.enterprise.telemed.patient";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E7ACEB096E0C3E0824B40B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_ASSET_PATHS = "\"TelemedPatient/Preview Content\"";
+				DEVELOPMENT_TEAM = JHDQ2CRC3V;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TelemedPatient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.azoft.enterprise.telemed.patient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match InHouse com.azoft.enterprise.telemed.patient";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E7AC2A31CE49DA2AC109A97 /* Build configuration list for PBXProject "TelemedPatient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E7AC1FA0994D0A826D16107 /* Debug */,
+				3E7AC6F38CC1733D28BF647B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E7AC891DD5D7EEAB8FE051A /* Build configuration list for PBXNativeTarget "TelemedPatient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E7AC9C1BD251C2058C37DB7 /* Debug */,
+				3E7ACEB096E0C3E0824B40B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0A08CBAD256D16C4007C2574 = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.0;
+			};
+		};
+		0A13BE05258110A400248B56 = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RedMadRobot/input-mask-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		0F51E90425623F9C00E46261 = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/zenangst/Hue";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		0F51E90E2564F4A200E46261 = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.0.0;
+			};
+		};
+		0F556F7C25DE0F840033B5C2 = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		0F94FB44255D12440005DE09 = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+		0F9B2DA625B56B490052D97C = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weitieda/bottom-sheet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.5;
+			};
+		};
+		0F9B2DA925B5B2640052D97C = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.6;
+			};
+		};
+		0F9B2DAC25B6CE4F0052D97C = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
+		0FB3AD402578A78F002C99C8 = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Square/Valet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.1;
+			};
+		};
+		0FC70FCC25933FE400FC914F = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftDate";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.1;
+			};
+		};
+		0FC70FCF25949A4800FC914F = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.0;
+			};
+		};
+		0FE6C85F25B99FE500D05E0E = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A08CBAE256D16C4007C2574 = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A08CBAD256D16C4007C2574;
+			productName = Rswift;
+		};
+		0A13BE06258110A400248B56 = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A13BE05258110A400248B56;
+			productName = InputMask;
+		};
+		0F51E90525623F9C00E46261 = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F51E90425623F9C00E46261;
+			productName = Hue;
+		};
+		0F51E90F2564F4A200E46261 = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F51E90E2564F4A200E46261;
+			productName = Moya;
+		};
+		0F556F7D25DE0F840033B5C2 = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F556F7C25DE0F840033B5C2;
+			productName = ProgressHUD;
+		};
+		0F94FB45255D12440005DE09 = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F94FB44255D12440005DE09;
+			productName = ComposableArchitecture;
+		};
+		0F9B2DA725B56B490052D97C = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F9B2DA625B56B490052D97C;
+			productName = BottomSheet;
+		};
+		0F9B2DAA25B5B2640052D97C = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F9B2DA925B5B2640052D97C;
+			productName = IQKeyboardManagerSwift;
+		};
+		0F9B2DAD25B6CE4F0052D97C = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F9B2DAC25B6CE4F0052D97C;
+			productName = Introspect;
+		};
+		0FB3AD412578A78F002C99C8 = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FB3AD402578A78F002C99C8;
+			productName = Valet;
+		};
+		0FC70FCD25933FE400FC914F = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FC70FCC25933FE400FC914F;
+			productName = SwiftDate;
+		};
+		0FC70FD025949A4800FC914F = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FC70FCF25949A4800FC914F;
+			productName = URLImage;
+		};
+		0FE6C86025B99FE500D05E0E = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FE6C85F25B99FE500D05E0E;
+			productName = SocketIO;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3E7ACE0A4DFFC689DAC51E19 /* Project object */;
+}

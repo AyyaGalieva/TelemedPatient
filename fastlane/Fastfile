@@ -1,0 +1,36 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+
+default_platform(:ios)
+
+
+platform :ios do
+  desc "Build iOS on Jenkins"
+  lane :build do
+    setup_jenkins
+    unlock_keychain(
+        path: ENV["MATCH_KEYCHAIN_NAME"],
+        password: ENV["MATCH_KEYCHAIN_PASSWORD"]
+        )
+  	match(type:"enterprise", readonly: true)
+  	gym(export_method: "enterprise", archive_path: "output/TelemedPatient", scheme: "TelemedPatient")
+  end
+
+ lane :build_local do
+  	match(type:"enterprise", readonly: true)
+  	gym(export_method: "enterprise", archive_path: "output/TelemedPatient")
+  end
+end
